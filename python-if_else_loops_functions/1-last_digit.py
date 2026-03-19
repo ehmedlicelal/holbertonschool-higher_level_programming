@@ -6,7 +6,7 @@ last_digit = number % 10
 if number < 0:
     last_digit -= 10
     print(f"{last_digit}")
-elif number > 0
+elif number > 0:
     print(last_digit)
 elif number == 0:
     print(number)
