@@ -15,7 +15,8 @@ Module Attributes:
 
 def text_indentation(text) -> None:
     """
-    This function takes a string `text` as input and adds new line characters after each sentence,
+    This function takes a string `text` as input and
+    adds new line characters after each sentence,
     ending with `.`, `?` or `:`.
 
     Input:
@@ -37,7 +38,7 @@ def text_indentation(text) -> None:
     <BLANKLINE>
     """
     i = 0
-    if type(text) != str:
+    if type(text) is not str:
         raise TypeError('text must be a string')
     while i < len(text):
         print(text[i], end="")
